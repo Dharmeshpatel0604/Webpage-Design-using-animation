@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(rgba(144, 215, 236, 0.3), (144, 215, 236, 0.1));
+    background-image: url(../Images/Sun\ temple.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 100vh;
+    font-family: 'Alkatra', cursive;
+}
+
+header {
+    text-align: center;
+    color: black;
+    height: 10vh;
+}
+
+nav {
+    background-color: rgba(144, 215, 236, 0.4);
+    display: flex;
+    width: 100%;
+    height: 8vh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .name {
+    width: 30%;
+    text-align: center;
+}
+
+nav .navbar {
+    display: flex;
+    width: 60%;
+    justify-content: space-evenly;
+
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    font-size: larger;
+}
+
+nav a:nth-child(2) {
+    color: coral;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 82vh;
+    color: white;
+    text-align: center;
+}
+
+section h3 {
+    font-size: 35px;
+    word-spacing: 4px;
+    margin-bottom: 4px;
+    margin-top: 3px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 3px black;
+}
+
+section h1 {
+    font-size: 55px;
+    word-spacing: 4px;
+    margin-bottom: 4px;
+    margin-top: 3px;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 2px black;
+
+}
+
+section a {
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0px 20px 0 30px;
+    /* transition: all 0.5s ease; */
+}
+
+main section p {
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 3px black;
+
+}
+
+section .btn1 {
+    background-color: green;
+    color: white;
+    transition: all 0.5s ease;
+
+}
+
+section .btn2 {
+    background-color: lightpink;
+    color: black;
+}
+
+.btn1:hover {
+    background-color: lightskyblue;
+    color: black;
+}
+.btn2:hover {
+    background-color: rgb(163, 231, 163);
+    color: white;
+}
+.change_cityname:after {
+    color: pink;
+    animation: cityname 10s forwards 0.6s 2 linear;
+    content: '';
+}
+@keyframes cityname {
+    0% { content: "Kutch";}
+    50% { content:"Dwarka";}
+    75% {content: "Sun Temple Mehsana";}
+    100% {content: "Patan"; }
+}
+
+
